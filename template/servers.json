@@ -1,0 +1,742 @@
+{
+  "us_california": {
+    "name": "US California",
+    "country": "US",
+    "dns": "us-california.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "198.8.80.132:8888",
+    "openvpn_udp": {
+      "best": "198.8.80.132:8080"
+    },
+    "openvpn_tcp": {
+      "best": "198.8.80.132:500"
+    },
+    "serial": "0a6290b4797fe455ceb399828d5c5b3b"
+  },
+  "us2": {
+    "name": "US East",
+    "country": "US",
+    "dns": "us-east.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "108.61.68.140:8888",
+    "openvpn_udp": {
+      "best": "108.61.68.140:8080"
+    },
+    "openvpn_tcp": {
+      "best": "108.61.68.140:500"
+    },
+    "serial": "f4cd2413837e06510b773e669e46723b"
+  },
+  "us1": {
+    "name": "US Midwest",
+    "country": "US",
+    "dns": "us-midwest.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "104.207.136.118:8888",
+    "openvpn_udp": {
+      "best": "104.207.136.118:8080"
+    },
+    "openvpn_tcp": {
+      "best": "104.207.136.118:500"
+    },
+    "serial": "686ef20f0ba5fda584fa1bf2a65bdaa9"
+  },
+  "us_chicago": {
+    "name": "US Chicago",
+    "country": "US",
+    "dns": "us-chicago.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "104.200.153.85:8888",
+    "openvpn_udp": {
+      "best": "104.200.153.85:8080"
+    },
+    "openvpn_tcp": {
+      "best": "104.200.153.85:500"
+    },
+    "serial": "1da62a494fe4951e6cea37cf8a930bcc"
+  },
+  "us_south_west": {
+    "name": "US Texas",
+    "country": "US",
+    "dns": "us-texas.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "162.216.46.108:8888",
+    "openvpn_udp": {
+      "best": "162.216.46.108:8080"
+    },
+    "openvpn_tcp": {
+      "best": "162.216.46.108:500"
+    },
+    "serial": "357a58e4ec2b4213a13eec614e873a11"
+  },
+  "us_florida": {
+    "name": "US Florida",
+    "country": "US",
+    "dns": "us-florida.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "104.156.240.138:8888",
+    "openvpn_udp": {
+      "best": "104.156.240.138:8080"
+    },
+    "openvpn_tcp": {
+      "best": "104.156.240.138:500"
+    },
+    "serial": "d50bee155175644f771841f45c6be833"
+  },
+  "us_seattle": {
+    "name": "US Seattle",
+    "country": "US",
+    "dns": "us-seattle.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "104.200.154.9:8888",
+    "openvpn_udp": {
+      "best": "104.200.154.9:8080"
+    },
+    "openvpn_tcp": {
+      "best": "104.200.154.9:500"
+    },
+    "serial": "7d5a205bc7cf609483c8412ad020c455"
+  },
+  "us3": {
+    "name": "US West",
+    "country": "US",
+    "dns": "us-west.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "104.200.151.57:8888",
+    "openvpn_udp": {
+      "best": "104.200.151.57:8080"
+    },
+    "openvpn_tcp": {
+      "best": "104.200.151.57:500"
+    },
+    "serial": "26b79d765afb8af03145131b8d897b7e"
+  },
+  "us_silicon_valley": {
+    "name": "US Silicon Valley",
+    "country": "US",
+    "dns": "us-siliconvalley.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "104.156.228.186:8888",
+    "openvpn_udp": {
+      "best": "104.156.228.186:8080"
+    },
+    "openvpn_tcp": {
+      "best": "104.156.228.186:500"
+    },
+    "serial": "fd1528b7ec6baeacd250a127208cb0f3"
+  },
+  "us_new_york_city": {
+    "name": "US New York City",
+    "country": "US",
+    "dns": "us-newyorkcity.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "209.95.50.163:8888",
+    "openvpn_udp": {
+      "best": "209.95.50.163:8080"
+    },
+    "openvpn_tcp": {
+      "best": "209.95.50.163:500"
+    },
+    "serial": "959a669ad4e0607a22cab83acb8cec49"
+  },
+  "us_atlanta": {
+    "name": "US Atlanta",
+    "country": "US",
+    "dns": "us-atlanta.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "172.98.79.202:8888",
+    "openvpn_udp": {
+      "best": "172.98.79.202:8080"
+    },
+    "openvpn_tcp": {
+      "best": "172.98.79.202:500"
+    },
+    "serial": "470afa7a67345b1ee1e1bbd37dc19794"
+  },
+  "us_las_vegas": {
+    "name": "US Las Vegas",
+    "country": "US",
+    "dns": "us-lasvegas.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "199.127.56.82:8888",
+    "openvpn_udp": {
+      "best": "199.127.56.82:8080"
+    },
+    "openvpn_tcp": {
+      "best": "199.127.56.82:500"
+    },
+    "serial": "cb2fc627d7f5293939ce758ee6c0b3d5"
+  },
+  "us_houston": {
+    "name": "US Houston",
+    "country": "US",
+    "dns": "us-houston.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "205.251.148.162:8888",
+    "openvpn_udp": {
+      "best": "205.251.148.162:8080"
+    },
+    "openvpn_tcp": {
+      "best": "205.251.148.162:500"
+    },
+    "serial": "775a860ad2c13bd9c5a88b4cb6cd8d03"
+  },
+  "uk": {
+    "name": "UK London",
+    "country": "GB",
+    "dns": "uk-london.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "104.238.169.56:8888",
+    "openvpn_udp": {
+      "best": "104.238.169.56:8080"
+    },
+    "openvpn_tcp": {
+      "best": "104.238.169.56:500"
+    },
+    "serial": "f90f32ff4b4710f7c02015312d8f939f"
+  },
+  "uk_southampton": {
+    "name": "UK Southampton",
+    "country": "GB",
+    "dns": "uk-southampton.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "31.24.226.226:8888",
+    "openvpn_udp": {
+      "best": "31.24.226.226:8080"
+    },
+    "openvpn_tcp": {
+      "best": "31.24.226.226:500"
+    },
+    "serial": "05f19f7846323e93bcbcfa3c4ed73cfb"
+  },
+  "uk_manchester": {
+    "name": "UK Manchester",
+    "country": "GB",
+    "dns": "uk-manchester.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "89.238.139.56:8888",
+    "openvpn_udp": {
+      "best": "89.238.139.56:8080"
+    },
+    "openvpn_tcp": {
+      "best": "89.238.139.56:500"
+    },
+    "serial": "9043d5f1f3b36be43d4c9ce185a5f9f7"
+  },
+  "ca_toronto": {
+    "name": "CA Toronto",
+    "country": "CA",
+    "dns": "ca-toronto.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "172.98.67.47:8888",
+    "openvpn_udp": {
+      "best": "172.98.67.47:8080"
+    },
+    "openvpn_tcp": {
+      "best": "172.98.67.47:500"
+    },
+    "serial": "0cbc83b43725107c8ca8feccea565acc"
+  },
+  "ca": {
+    "name": "CA Montreal",
+    "country": "CA",
+    "dns": "ca-montreal.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "173.199.65.54:8888",
+    "openvpn_udp": {
+      "best": "173.199.65.54:8080"
+    },
+    "openvpn_tcp": {
+      "best": "173.199.65.54:500"
+    },
+    "serial": "7e7d49d8155ecb3f536eb68a5a6ad561"
+  },
+  "ca_vancouver": {
+    "name": "CA Vancouver",
+    "country": "CA",
+    "dns": "ca-vancouver.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "172.83.40.105:8888",
+    "openvpn_udp": {
+      "best": "172.83.40.105:8080"
+    },
+    "openvpn_tcp": {
+      "best": "172.83.40.105:500"
+    },
+    "serial": "74b024eee20f0d77cfd3d393b04333ad"
+  },
+  "aus": {
+    "name": "AU Sydney",
+    "country": "AU",
+    "dns": "au-sydney.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "137.59.252.136:8888",
+    "openvpn_udp": {
+      "best": "137.59.252.136:8080"
+    },
+    "openvpn_tcp": {
+      "best": "137.59.252.136:500"
+    },
+    "serial": "4ff351fbe6009cc4af66686f2e575eff"
+  },
+  "aus_melbourne": {
+    "name": "AU Melbourne",
+    "country": "AU",
+    "dns": "au-melbourne.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "168.1.75.27:8888",
+    "openvpn_udp": {
+      "best": "168.1.75.27:8080"
+    },
+    "openvpn_tcp": {
+      "best": "168.1.75.27:500"
+    },
+    "serial": "54d8d0a1636ea4a318f3d71e1527b2be"
+  },
+  "de_berlin": {
+    "name": "DE Berlin",
+    "country": "DE",
+    "dns": "de-berlin.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "185.230.127.236:8888",
+    "openvpn_udp": {
+      "best": "185.230.127.236:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.230.127.236:500"
+    },
+    "serial": "b841f239b31d728de1a40cf2a37c39f3"
+  },
+  "germany": {
+    "name": "DE Frankfurt",
+    "country": "DE",
+    "dns": "de-frankfurt.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "185.220.70.142:8888",
+    "openvpn_udp": {
+      "best": "185.220.70.142:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.220.70.142:500"
+    },
+    "serial": "15f37ce24ba7096107c10f7b63497b51"
+  },
+  "nz": {
+    "name": "New Zealand",
+    "country": "NZ",
+    "dns": "nz.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "103.231.91.35:8888",
+    "openvpn_udp": {
+      "best": "103.231.91.35:8080"
+    },
+    "openvpn_tcp": {
+      "best": "103.231.91.35:500"
+    },
+    "serial": "49ce51c4611db293f301330652a14abc"
+  },
+  "nl": {
+    "name": "Netherlands",
+    "country": "NL",
+    "dns": "nl.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "185.107.44.21:8888",
+    "openvpn_udp": {
+      "best": "185.107.44.21:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.107.44.21:500"
+    },
+    "serial": "d0fcf3e96a0139c0958538f50038014c"
+  },
+  "sweden": {
+    "name": "Sweden",
+    "country": "SE",
+    "dns": "sweden.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "46.246.123.12:8888",
+    "openvpn_udp": {
+      "best": "46.246.123.12:8080"
+    },
+    "openvpn_tcp": {
+      "best": "46.246.123.12:500"
+    },
+    "serial": "2fa5a8d86447933a1446d728e8eb4ba3"
+  },
+  "no": {
+    "name": "Norway",
+    "country": "NO",
+    "dns": "no.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "82.102.27.75:8888",
+    "openvpn_udp": {
+      "best": "82.102.27.75:8080"
+    },
+    "openvpn_tcp": {
+      "best": "82.102.27.75:500"
+    },
+    "serial": "4bc2ae59c22661aedb07642d186c783c"
+  },
+  "denmark": {
+    "name": "Denmark",
+    "country": "DK",
+    "dns": "denmark.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "82.102.20.179:8888",
+    "openvpn_udp": {
+      "best": "82.102.20.179:8080"
+    },
+    "openvpn_tcp": {
+      "best": "82.102.20.179:500"
+    },
+    "serial": "a355ab88e60b8ef475050e9fbfd3a9bd"
+  },
+  "fi": {
+    "name": "Finland",
+    "country": "FI",
+    "dns": "fi.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "192.40.95.12:8888",
+    "openvpn_udp": {
+      "best": "192.40.95.12:8080"
+    },
+    "openvpn_tcp": {
+      "best": "192.40.95.12:500"
+    },
+    "serial": "74ed637771e8b7e379772046a64ba0bb"
+  },
+  "swiss": {
+    "name": "Switzerland",
+    "country": "CH",
+    "dns": "swiss.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "185.230.125.51:8888",
+    "openvpn_udp": {
+      "best": "185.230.125.51:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.230.125.51:500"
+    },
+    "serial": "b0e3faaf9a6da0c8934e5da3f9db0a7c"
+  },
+  "france": {
+    "name": "France",
+    "country": "FR",
+    "dns": "france.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "108.61.123.69:8888",
+    "openvpn_udp": {
+      "best": "108.61.123.69:8080"
+    },
+    "openvpn_tcp": {
+      "best": "108.61.123.69:500"
+    },
+    "serial": "027c20f75134cc20001326b20602eebd"
+  },
+  "belgium": {
+    "name": "Belgium",
+    "country": "BE",
+    "dns": "belgium.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "77.243.191.23:8888",
+    "openvpn_udp": {
+      "best": "77.243.191.23:8080"
+    },
+    "openvpn_tcp": {
+      "best": "77.243.191.23:500"
+    },
+    "serial": "104278ce5daf6c8b9ac9a809fd100fde"
+  },
+  "austria": {
+    "name": "Austria",
+    "country": "AT",
+    "dns": "austria.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "185.216.34.229:8888",
+    "openvpn_udp": {
+      "best": "185.216.34.229:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.216.34.229:500"
+    },
+    "serial": "8254b089a782c9312ecfcd550c8fa828"
+  },
+  "czech": {
+    "name": "Czech Republic",
+    "country": "CZ",
+    "dns": "czech.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "185.216.35.67:8888",
+    "openvpn_udp": {
+      "best": "185.216.35.67:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.216.35.67:500"
+    },
+    "serial": "41954d31886607d42a43952c0029b7e9"
+  },
+  "ireland": {
+    "name": "Ireland",
+    "country": "IE",
+    "dns": "ireland.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "23.92.127.58:8888",
+    "openvpn_udp": {
+      "best": "23.92.127.58:8080"
+    },
+    "openvpn_tcp": {
+      "best": "23.92.127.58:500"
+    },
+    "serial": "be603b7896f9154c7c6927d0e3abab01"
+  },
+  "italy": {
+    "name": "Italy",
+    "country": "IT",
+    "dns": "italy.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "82.102.21.98:8888",
+    "openvpn_udp": {
+      "best": "82.102.21.98:8080"
+    },
+    "openvpn_tcp": {
+      "best": "82.102.21.98:500"
+    },
+    "serial": "b7267917b9f2f27ec7c17d9316ee7e94"
+  },
+  "spain": {
+    "name": "Spain",
+    "country": "ES",
+    "dns": "spain.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "194.99.104.29:8888",
+    "openvpn_udp": {
+      "best": "194.99.104.29:8080"
+    },
+    "openvpn_tcp": {
+      "best": "194.99.104.29:500"
+    },
+    "serial": "2aefd73ccd9edf44888e2947538163f6"
+  },
+  "ro": {
+    "name": "Romania",
+    "country": "RO",
+    "dns": "ro.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "185.45.12.126:8888",
+    "openvpn_udp": {
+      "best": "185.45.12.126:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.45.12.126:500"
+    },
+    "serial": "39e0e693493c9bded025cede655056e0"
+  },
+  "hungary": {
+    "name": "Hungary",
+    "country": "HU",
+    "dns": "hungary.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "185.128.26.19:8888",
+    "openvpn_udp": {
+      "best": "185.128.26.19:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.128.26.19:500"
+    },
+    "serial": "6f7a83459182995e3cd473059d182724"
+  },
+  "poland": {
+    "name": "Poland",
+    "country": "PL",
+    "dns": "poland.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "185.244.214.196:8888",
+    "openvpn_udp": {
+      "best": "185.244.214.196:8080"
+    },
+    "openvpn_tcp": {
+      "best": "185.244.214.196:500"
+    },
+    "serial": "0bf4b987b4992de8e9df401c8356a902"
+  },
+  "turkey": {
+    "name": "Turkey",
+    "country": "TR",
+    "dns": "turkey.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "176.53.21.210:8888",
+    "openvpn_udp": {
+      "best": "176.53.21.210:8080"
+    },
+    "openvpn_tcp": {
+      "best": "176.53.21.210:500"
+    },
+    "serial": "4644d561336442df5154d4d8b105787f"
+  },
+  "hk": {
+    "name": "Hong Kong",
+    "country": "HK",
+    "dns": "hk.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "119.81.135.28:8888",
+    "openvpn_udp": {
+      "best": "119.81.135.28:8080"
+    },
+    "openvpn_tcp": {
+      "best": "119.81.135.28:500"
+    },
+    "serial": "74ea4f0eb7d4082c8e03221e21a1d638"
+  },
+  "sg": {
+    "name": "Singapore",
+    "country": "SG",
+    "dns": "sg.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "119.81.66.251:8888",
+    "openvpn_udp": {
+      "best": "119.81.66.251:8080"
+    },
+    "openvpn_tcp": {
+      "best": "119.81.66.251:500"
+    },
+    "serial": "02c8a68d3372f1b1c0c5541cb5dc97a8"
+  },
+  "japan": {
+    "name": "Japan",
+    "country": "JP",
+    "dns": "japan.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "103.208.220.137:8888",
+    "openvpn_udp": {
+      "best": "103.208.220.137:8080"
+    },
+    "openvpn_tcp": {
+      "best": "103.208.220.137:500"
+    },
+    "serial": "87cb9b67385729b253f11d2cdca3de5d"
+  },
+  "israel": {
+    "name": "Israel",
+    "country": "IL",
+    "dns": "israel.privateinternetaccess.com",
+    "port_forward": true,
+    "ping": "31.168.172.136:8888",
+    "openvpn_udp": {
+      "best": "31.168.172.136:8080"
+    },
+    "openvpn_tcp": {
+      "best": "31.168.172.136:500"
+    },
+    "serial": "79a9a608ea687cb1698310c83e4e772c"
+  },
+  "mexico": {
+    "name": "Mexico",
+    "country": "MX",
+    "dns": "mexico.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "169.57.0.207:8888",
+    "openvpn_udp": {
+      "best": "169.57.0.207:8080"
+    },
+    "openvpn_tcp": {
+      "best": "169.57.0.207:500"
+    },
+    "serial": "4ea1c3f6d4bb93cb940b48c3a5f9da63"
+  },
+  "brazil": {
+    "name": "Brazil",
+    "country": "BR",
+    "dns": "brazil.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "177.234.153.130:8888",
+    "openvpn_udp": {
+      "best": "177.234.153.130:8080"
+    },
+    "openvpn_tcp": {
+      "best": "177.234.153.130:500"
+    },
+    "serial": "ad5b94e34b732aa1165601a5a1021397"
+  },
+  "in": {
+    "name": "India",
+    "country": "IN",
+    "dns": "in.privateinternetaccess.com",
+    "port_forward": false,
+    "ping": "138.128.180.98:8888",
+    "openvpn_udp": {
+      "best": "138.128.180.98:8080"
+    },
+    "openvpn_tcp": {
+      "best": "138.128.180.98:500"
+    },
+    "serial": "f8089b3be1365deab8b15d6f99037271"
+  },
+  "info": {
+    "web_ips": [
+      "www.privateinternetaccess.com"
+    ],
+    "vpn_ports": {
+      "udp": [
+        1194,
+        8080,
+        9201,
+        53
+      ],
+      "tcp": [
+        443,
+        110,
+        80
+      ]
+    },
+    "latest_version": 80,
+    "poll_interval": 618,
+    "auto_regions": [
+      "us_california",
+      "us2",
+      "us1",
+      "us_chicago",
+      "us_south_west",
+      "us_florida",
+      "us_seattle",
+      "us3",
+      "us_silicon_valley",
+      "us_new_york_city",
+      "us_atlanta",
+      "us_las_vegas",
+      "us_houston",
+      "uk",
+      "uk_southampton",
+      "uk_manchester",
+      "ca_toronto",
+      "ca",
+      "ca_vancouver",
+      "aus",
+      "aus_melbourne",
+      "de_berlin",
+      "germany",
+      "nl",
+      "sweden",
+      "no",
+      "denmark",
+      "fi",
+      "swiss",
+      "france",
+      "belgium",
+      "austria",
+      "czech",
+      "ireland",
+      "italy",
+      "spain",
+      "ro",
+      "hungary",
+      "poland",
+      "hk",
+      "sg",
+      "japan",
+      "israel",
+      "mexico",
+      "brazil",
+      "in"
+    ]
+  }
+}
