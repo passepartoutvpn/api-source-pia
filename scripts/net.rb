@@ -34,6 +34,7 @@ json.each { |k, v|
     }
 
     id = hostname.split('.')[0]
+    id_comps = id.split('-')
     pool = {
         :id => id,
         :name => v["name"],
@@ -41,6 +42,7 @@ json.each { |k, v|
         :hostname => hostname,
         :addrs => addresses
     }
+    pool[:area] = id_comps[1] if id_comps.length > 1
     pools << pool
 }
 
