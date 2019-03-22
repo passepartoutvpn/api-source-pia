@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 JSON="../template/servers.json"
 echo
 echo "WARNING: Certs must be updated manually!"
