@@ -70,7 +70,8 @@ recommended = {
         frame: 1,
         ping: 10,
         reneg: 3600,
-        pia: true
+        pia: true,
+        eku: true
     }
 }
 strong = {
@@ -97,7 +98,8 @@ strong = {
         frame: 1,
         ping: 10,
         reneg: 3600,
-        pia: true
+        pia: true,
+        eku: true
     }
 }
 presets = [recommended, strong]
