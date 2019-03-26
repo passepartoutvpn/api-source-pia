@@ -8,8 +8,8 @@ Dir.chdir(cwd)
 ###
 
 servers = File.read("../template/servers.json")
-ca2048 = File.read("../certs/ca2048.pem")
-ca4096 = File.read("../certs/ca4096.pem")
+ca2048 = File.read("../static/ca2048.pem")
+ca4096 = File.read("../static/ca4096.pem")
 
 cfg = {
     ep: [
