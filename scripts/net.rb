@@ -5,11 +5,40 @@ require "ipaddr"
 cwd = File.dirname(__FILE__)
 Dir.chdir(cwd)
 
-servers = File.read("../template/servers.json")
-json = JSON.parse(servers)
+###
 
+servers = File.read("../template/servers.json")
 ca2048 = File.read("../certs/ca2048.pem")
 ca4096 = File.read("../certs/ca4096.pem")
+
+cfg = {
+    ep: [
+        "UDP:1194",
+        "UDP:8080",
+        "UDP:9201",
+        "UDP:53",
+        "UDP:1198",
+        "UDP:1197",
+        "TCP:443",
+        "TCP:110",
+        "TCP:80",
+        "TCP:502",
+        "TCP:501"
+    ],
+    frame: 1,
+    ping: 10,
+    reneg: 3600,
+    pia: true,
+    eku: true
+}
+
+recommended_cfg = cfg.dup
+recommended_cfg["ca"] = ca2048
+recommended_cfg["cipher"] = "AES-128-GCM"
+
+strong_cfg = cfg.dup
+strong_cfg["ca"] = ca4096
+strong_cfg["cipher"] = "AES-256-GCM"
 
 ###
 
@@ -17,6 +46,8 @@ ca4096 = File.read("../certs/ca4096.pem")
 #ports = info["vpn_ports"]
 
 pools = []
+
+json = JSON.parse(servers)
 json.each { |k, v|
     next if k == "info"
 
@@ -46,61 +77,19 @@ json.each { |k, v|
     pools << pool
 }
 
+###
+
 recommended = {
     id: "recommended",
     name: "Recommended",
     comment: "128-bit encryption",
-    cfg: {
-        ep: [
-            "UDP:1194",
-            "UDP:8080",
-            "UDP:9201",
-            "UDP:53",
-            "UDP:1198",
-            "UDP:1197",
-            "TCP:443",
-            "TCP:110",
-            "TCP:80",
-            "TCP:502",
-            "TCP:501"
-        ],
-        cipher: "AES-128-GCM",
-        auth: "SHA1",
-        ca: ca2048,
-        frame: 1,
-        ping: 10,
-        reneg: 3600,
-        pia: true,
-        eku: true
-    }
+    cfg: recommended_cfg
 }
 strong = {
     id: "strong",
     name: "Strong",
     comment: "256-bit encryption (slower)",
-    cfg: {
-        ep: [
-            "UDP:1194",
-            "UDP:8080",
-            "UDP:9201",
-            "UDP:53",
-            "UDP:1198",
-            "UDP:1197",
-            "TCP:443",
-            "TCP:110",
-            "TCP:80",
-            "TCP:502",
-            "TCP:501"
-        ],
-        cipher: "AES-256-GCM",
-        auth: "SHA256",
-        ca: ca4096,
-        frame: 1,
-        ping: 10,
-        reneg: 3600,
-        pia: true,
-        eku: true
-    }
+    cfg: strong_cfg
 }
 presets = [recommended, strong]
 
