@@ -40,6 +40,26 @@ strong_cfg = cfg.dup
 strong_cfg["ca"] = ca4096
 strong_cfg["cipher"] = "AES-256-GCM"
 
+recommended = {
+    id: "recommended",
+    name: "Recommended",
+    comment: "128-bit encryption",
+    cfg: recommended_cfg
+}
+strong = {
+    id: "strong",
+    name: "Strong",
+    comment: "256-bit encryption (slower)",
+    cfg: strong_cfg
+}
+presets = [recommended, strong]
+
+defaults = {
+    :username => "p1234567",
+    :pool => "us-east",
+    :preset => "recommended"
+}
+
 ###
 
 #info = json["info"]
@@ -75,28 +95,6 @@ json.each { |k, v|
     }
     pool[:area] = id_comps[1] if id_comps.length > 1
     pools << pool
-}
-
-###
-
-recommended = {
-    id: "recommended",
-    name: "Recommended",
-    comment: "128-bit encryption",
-    cfg: recommended_cfg
-}
-strong = {
-    id: "strong",
-    name: "Strong",
-    comment: "256-bit encryption (slower)",
-    cfg: strong_cfg
-}
-presets = [recommended, strong]
-
-defaults = {
-    :username => "p1234567",
-    :pool => "us-east",
-    :preset => "recommended"
 }
 
 ###
