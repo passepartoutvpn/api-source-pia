@@ -88,7 +88,6 @@ json.each { |k, v|
     id_comps = id.split('-')
     pool = {
         :id => id,
-        :name => v["name"],
         :country => v["country"],
         :hostname => hostname,
         :addrs => addresses
