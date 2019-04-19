@@ -74,7 +74,7 @@ json.each { |k, v|
     hostname = v["dns"]
 
     addresses = nil
-    if ARGV.length > 0 && ARGV[0] == "noresolv"
+    if ARGV.include? "noresolv"
         addresses = []
         #addresses = ["1.2.3.4"]
     else
@@ -88,7 +88,6 @@ json.each { |k, v|
     id_comps = id.split('-')
     pool = {
         :id => id,
-        :name => v["name"],
         :country => v["country"],
         :hostname => hostname,
         :addrs => addresses
