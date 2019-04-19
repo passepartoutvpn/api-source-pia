@@ -74,7 +74,7 @@ json.each { |k, v|
     hostname = v["dns"]
 
     addresses = nil
-    if ARGV.length > 0 && ARGV[0] == "noresolv"
+    if ARGV.include? "noresolv"
         addresses = []
         #addresses = ["1.2.3.4"]
     else
