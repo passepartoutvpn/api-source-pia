@@ -32,6 +32,10 @@ cfg = {
     eku: true
 }
 
+external = {
+    "hostname": "${id}.privateinternetaccess.com"
+}
+
 recommended_cfg = cfg.dup
 recommended_cfg["ca"] = ca2048
 recommended_cfg["cipher"] = "AES-128-GCM"
@@ -44,13 +48,15 @@ recommended = {
     id: "recommended",
     name: "Recommended",
     comment: "128-bit encryption",
-    cfg: recommended_cfg
+    cfg: recommended_cfg,
+    external: external
 }
 strong = {
     id: "strong",
     name: "Strong",
     comment: "256-bit encryption (slower)",
-    cfg: strong_cfg
+    cfg: strong_cfg,
+    external: external
 }
 presets = [recommended, strong]
 
