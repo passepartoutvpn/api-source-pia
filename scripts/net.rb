@@ -54,7 +54,7 @@ recommended = {
 strong = {
     id: "strong",
     name: "Strong",
-    comment: "256-bit encryption (slower)",
+    comment: "256-bit encryption",
     cfg: strong_cfg,
     external: external
 }
