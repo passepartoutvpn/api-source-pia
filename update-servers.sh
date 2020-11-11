@@ -1,5 +1,5 @@
 #!/bin/bash
-URL="http://privateinternetaccess.com/vpninfo/servers?version=80"
+URL="https://serverlist.piaservers.net/vpninfo/servers/new"
 TPL="template"
 SERVERS="$TPL/servers.json"
 

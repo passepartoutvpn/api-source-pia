@@ -11,29 +11,27 @@ servers = File.read("../template/servers.json")
 ca2048 = File.read("../static/ca2048.pem")
 ca4096 = File.read("../static/ca4096.pem")
 
+json = JSON.parse(servers)
+
 cfg = {
-    ep: [
-        "UDP:1194",
-        "UDP:8080",
-        "UDP:9201",
-        "UDP:53",
-        "UDP:1198",
-        "UDP:1197",
-        "TCP:443",
-        "TCP:110",
-        "TCP:80",
-        "TCP:502",
-        "TCP:501"
-    ],
-    frame: 1,
+    frame: 2,
     ping: 10,
-    reneg: 3600,
+    reneg: 0,
     pia: true,
     eku: true
 }
 
+groups = json["groups"]
+udp_ports = groups["ovpnudp"][0]["ports"]
+tcp_ports = groups["ovpntcp"][0]["ports"]
+
+ep = []
+udp_ports.each { |p| ep << "UDP:#{p}" }
+tcp_ports.each { |p| ep << "TCP:#{p}" }
+cfg["ep"] = ep
+
 external = {
-    "hostname": "${id}.privateinternetaccess.com"
+  "hostname": "${id}.privacy.network"
 }
 
 recommended_cfg = cfg.dup
@@ -73,11 +71,11 @@ defaults = {
 
 pools = []
 
-json = JSON.parse(servers)
-json.each { |k, v|
-    next if k == "info"
-
+json["regions"].each { |v|
     hostname = v["dns"]
+    #id = v["id"]
+    id = hostname.split('.')[0]
+    country = v["country"]
 
     addresses = nil
     if ARGV.include? "noresolv"
@@ -90,14 +88,13 @@ json.each { |k, v|
         IPAddr.new(a).to_i
     }
 
-    id = hostname.split('.')[0]
-    id_comps = id.split('-')
     pool = {
         :id => id,
-        :country => v["country"],
+        :country => country,
         :hostname => hostname,
         :addrs => addresses
     }
+    id_comps = id.split('-')
     pool[:area] = id_comps[1] if id_comps.length > 1
     pools << pool
 }
