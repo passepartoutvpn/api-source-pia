@@ -60,7 +60,7 @@ presets = [recommended, strong]
 
 defaults = {
     :username => "p1234567",
-    :pool => "us-east",
+    :pool => "us-newyorkcity",
     :preset => "recommended"
 }
 
