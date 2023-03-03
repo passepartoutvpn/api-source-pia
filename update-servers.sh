@@ -1,5 +1,5 @@
 #!/bin/bash
-URL="https://serverlist.piaservers.net/vpninfo/servers/new"
+URL="https://serverlist.piaservers.net/vpninfo/servers/v6"
 TPL="template"
 SERVERS="$TPL/servers.json"
 

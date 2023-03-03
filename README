@@ -1,3 +1,7 @@
 Private Internet Access infrastructure is built upon the following (public) web service:
 
-http://www.privateinternetaccess.com/vpninfo/servers
+https://serverlist.piaservers.net/vpninfo/servers/v6
+
+Check out GitHub organization for updates:
+
+https://github.com/pia-foss/manual-connections
