@@ -36,7 +36,7 @@ recommended_cfg["digest"] = "SHA1"
 strong_cfg = cfg.dup
 strong_cfg["ca"] = ca4096
 strong_cfg["cipher"] = "AES-256-CBC"
-strong_cfg["digest"] = "SHA-256"
+strong_cfg["digest"] = "SHA256"
 
 recommended = {
   id: "recommended",
