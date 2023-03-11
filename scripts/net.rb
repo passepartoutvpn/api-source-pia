@@ -17,7 +17,6 @@ cfg = {
   compressionFraming: 2,
   keepAliveSeconds: 10,
   renegotiatesAfterSeconds: 0,
-  usesPIAPatches: true,
   checksEKU: true
 }
 
@@ -31,11 +30,13 @@ tcp_ports.each { |p| ep << "TCP:#{p}" }
 
 recommended_cfg = cfg.dup
 recommended_cfg["ca"] = ca2048
-recommended_cfg["cipher"] = "AES-128-GCM"
+recommended_cfg["cipher"] = "AES-128-CBC"
+recommended_cfg["digest"] = "SHA1"
 
 strong_cfg = cfg.dup
 strong_cfg["ca"] = ca4096
-strong_cfg["cipher"] = "AES-256-GCM"
+strong_cfg["cipher"] = "AES-256-CBC"
+strong_cfg["digest"] = "SHA-256"
 
 recommended = {
   id: "recommended",
@@ -43,7 +44,10 @@ recommended = {
   comment: "128-bit encryption",
   ovpn: {
     cfg: recommended_cfg,
-    endpoints: ep
+    endpoints: [
+      "UDP:1198",
+      "TCP:502"
+    ]
   }
 }
 strong = {
@@ -52,7 +56,10 @@ strong = {
   comment: "256-bit encryption",
   ovpn: {
     cfg: strong_cfg,
-    endpoints: ep
+    endpoints: [
+      "UDP:1197",
+      "TCP:501"
+    ]
   }
 }
 presets = [recommended, strong]
