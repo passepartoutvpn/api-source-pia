@@ -44,10 +44,7 @@ recommended = {
   comment: "128-bit encryption",
   ovpn: {
     cfg: recommended_cfg,
-    endpoints: [
-      "UDP:1198",
-      "TCP:502"
-    ]
+    endpoints: ep
   }
 }
 strong = {
@@ -56,10 +53,7 @@ strong = {
   comment: "256-bit encryption",
   ovpn: {
     cfg: strong_cfg,
-    endpoints: [
-      "UDP:1197",
-      "TCP:501"
-    ]
+    endpoints: ep
   }
 }
 presets = [recommended, strong]
