@@ -8,12 +8,14 @@ Dir.chdir(cwd)
 ###
 
 template = File.read("../template/servers.json")
-ca2048 = File.read("../static/ca2048.pem")
-ca4096 = File.read("../static/ca4096.pem")
+ca = File.read("../static/ca.pem")
 
 json = JSON.parse(template)
 
 cfg = {
+  ca: ca,
+  cipher: "AES-256-CBC",
+  digest: "SHA256",
   compressionFraming: 2,
   keepAliveSeconds: 10,
   renegotiatesAfterSeconds: 0,
@@ -28,35 +30,16 @@ ep = []
 udp_ports.each { |p| ep << "UDP:#{p}" }
 tcp_ports.each { |p| ep << "TCP:#{p}" }
 
-recommended_cfg = cfg.dup
-recommended_cfg["ca"] = ca2048
-recommended_cfg["cipher"] = "AES-128-CBC"
-recommended_cfg["digest"] = "SHA1"
-
-strong_cfg = cfg.dup
-strong_cfg["ca"] = ca4096
-strong_cfg["cipher"] = "AES-256-CBC"
-strong_cfg["digest"] = "SHA256"
-
 recommended = {
-  id: "recommended",
-  name: "Recommended",
-  comment: "128-bit encryption",
-  ovpn: {
-    cfg: recommended_cfg,
-    endpoints: ep
-  }
-}
-strong = {
-  id: "strong",
-  name: "Strong",
+  id: "default",
+  name: "Default",
   comment: "256-bit encryption",
   ovpn: {
-    cfg: strong_cfg,
+    cfg: cfg,
     endpoints: ep
   }
 }
-presets = [recommended, strong]
+presets = [recommended]
 
 defaults = {
   :username => "p1234567",
